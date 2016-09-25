@@ -19,7 +19,7 @@ Differences to the regular Sematext Docker Agent Setup:
    ```
 docker service create --mode global --name sematext-agent-docker \
 type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \ 
--e LOGENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN \ # for metrics and docker events
+-e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN \ # for metrics and docker events
 -e LOGSENE_TOKEN=YOUR_LOGSNE_TOKEN \ # optional for container logs
 sematext/sematext-agent-docker:swarm3k
    ```
