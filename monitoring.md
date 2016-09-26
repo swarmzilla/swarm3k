@@ -29,6 +29,9 @@ To store container Logs in Logsene create a second Logsene App and add ```-e LOG
 You’ll see your Docker metrics in Logsene after about a minute. Then open "Kibana / Dashboards" in Logsene.
 ![](https://raw.githubusercontent.com/megastef/swarm3k/master/dashboard2.png)
 
+![](https://raw.githubusercontent.com/megastef/swarm3k/master/events.png)
+
+
 # Example Data:
 
 ## 1. Container Stats (_type: dockerStats): 
