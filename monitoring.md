@@ -1,6 +1,8 @@
 # Docker Swarm Monitoring with Sematext Docker Agent
 
-We use a special build of the Sematext Docker Agent for swarm3k.
+We use a special image of the Sematext Docker Agent for swarm3k:
+```sematext/sematext-agent-docker:swarm3k```
+
 Differences to the regular Sematext Docker Agent Setup:
 - Metrics, Logs and Events are stored only in Logsene. 
   This means the SPM backend will not be involved inthe Swarm3k project. 
@@ -25,7 +27,6 @@ sematext/sematext-agent-docker:swarm3k
 
     You’ll see your Docker metrics in Logsene after about a minute. 
     Create a Kibana dashboard for your metrics, events and logs. 
-
 
 # Example Data:
 
