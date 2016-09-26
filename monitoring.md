@@ -6,27 +6,27 @@ Differences to the regular Sematext Docker Agent Setup:
 - Metrics, Logs and Events are stored only in Logsene. 
   This means the SPM backend will not be involved inthe Swarm3k project. 
 - Kibana (integrated in Logsene) should be used for metrics visulisation.  
-- Collection interval is set to 1 minute resolution (expecting 150k containers) to reduce the amount of data and speed up Kibana queries (less data points).
+- The metrics collection interval is set to a resolution of 1 minute. We expect 150k containers an like to reduce the amount of data to speed up Kibana queries.
 - Metrics and Logs are tagged with swarm specific tags from "docker info", like NodeID, ServiceID, Swarm labels, ...
 - Collection of "docker info" 
 
 # Installation 
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/)  
-3. Deploy Sematext Docker Agent to all cluster nodes. Please replace ```YOUR_LOGSENE_TOKEN``` with your Logsene App token in the following command. 
+2. [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Thats why it makes sense to create a second Logsene App for Logs. This will make the creation of Dashboards a bit easier.   
+3. Deploy Sematext Docker Agent to all cluster nodes. Please replace ```YOUR_LOGSENE_TOKEN_...``` with your Logsene App token in the following command. 
 
    ```
 docker service create --mode global --name sematext-agent-docker \
 --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \ 
--e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN \
+-e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN_FOR_METRICS \
+-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS \ # optional: if not set no logs are collected
 sematext/sematext-agent-docker:swarm3k
    ```
 
 To store container Logs in Logsene create a second Logsene App and add ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
 
-**You’ll see your Docker metrics in Logsene after about a minute. 
-Then create a Kibana dashboard in Logsene. **
+You’ll see your Docker metrics in Logsene after about a minute. Then open Kibana/Dashboardsin Logsene.
 
 # Example Data:
 
