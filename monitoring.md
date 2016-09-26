@@ -1,7 +1,6 @@
 # Docker Swarm Monitoring with Sematext Docker Agent
 
-We use a special image of the Sematext Docker Agent for swarm3k:
-```sematext/sematext-agent-docker:swarm3k```
+We use a special image of the Sematext Docker Agent for swarm3k: **sematext/sematext-agent-docker:swarm3k**
 
 Differences to the regular Sematext Docker Agent Setup:
 - Metrics, Logs and Events are stored only in Logsene. 
