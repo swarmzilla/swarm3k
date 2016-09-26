@@ -13,7 +13,7 @@ Differences to the regular Sematext Docker Agent Setup:
 # Installation 
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. We will [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields will make the creation of Dashboards a simpler. Thats why it makes sense to create a second Logsene App for Logs.   
+2. We will [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Thats why it makes sense to create a second Logsene App for Logs.   
 3. For the deployment Sematext Docker Agent to all cluster nodes, we will share the required tokens via e-mail or gitter channel.  
 
    ```
