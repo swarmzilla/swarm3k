@@ -12,7 +12,7 @@ Differences to the regular Sematext Docker Agent Setup:
 
 # Installation 
 
-1. Get a free account at [sematext.com/spm](https://apps.sematext.com/users-web/register.do)  
+1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
 2. [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/)  
 3. Deploy Sematext Docker Agent to all cluster nodes. Please replace YOUR_LOGSNE_TOKEN with your Logsene token in the following command.
 
