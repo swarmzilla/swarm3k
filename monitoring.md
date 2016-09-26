@@ -14,15 +14,16 @@ Differences to the regular Sematext Docker Agent Setup:
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
 2. [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/)  
-3. Deploy Sematext Docker Agent to all cluster nodes. Please replace YOUR_LOGSNE_TOKEN with your Logsene token in the following command.
+3. Deploy Sematext Docker Agent to all cluster nodes. Please replace ```YOUR_LOGSENE_TOKEN``` with your Logsene App token in the following command. 
 
    ```
 docker service create --mode global --name sematext-agent-docker \
-type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \ 
--e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN \ # for metrics and docker events
--e LOGSENE_TOKEN=YOUR_LOGSNE_TOKEN \ # optional for container logs
+--mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \ 
+-e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN \
 sematext/sematext-agent-docker:swarm3k
    ```
+
+To store container Logs in Logsene create a second Logsene App and add -e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS
 
     You’ll see your Docker metrics in Logsene after about a minute. 
     Create a Kibana dashboard for your metrics, events and logs. 
@@ -206,7 +207,9 @@ Exaples CPU/Memory (there are more like network, disk io, ...)
   ```
   
 **From a Swarm Service (_type: imageName)**
- 
+ Nginx example. Logs are parsed and might create new fields in your Logsene App. 
+
+
  ```
   {
     "@timestamp": "2016-09-26T16:39:39.000Z",
