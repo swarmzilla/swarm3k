@@ -8,7 +8,6 @@ Differences to the regular Sematext Docker Agent Setup:
 - Collection interval is set to 1 minute resolution (expecting 150k containers) to reduce the amount of data and speed up Kibana queries (less data points).
 - Metrics and Logs are tagged with swarm specific tags from "docker info", like NodeID, ServiceID, Swarm labels, ...
 - Collection of "docker info" 
-- TODO: Node metrics like cpu/mem/IO are curently not stored in Logsene, we will fix this in the next days. 
 
 # Installation 
 
@@ -30,50 +29,49 @@ sematext/sematext-agent-docker:swarm3k
 
 # Example Data:
 
-## 1. Container Stats (_type: dockerstats): 
+## 1. Container Stats (_type: dockerStats): 
 
 ```
 {
-  "_index": "80e5977e-c7d2-4570-8f66-xxxxxxxxx_2016-09-24_1",
-  "_type": "dockerstats",
-  "_id": "AVdiqiHO417-Q-IWBmAo",
-  "_score": null,
-  "_source": {
-    "@timestamp": "2016-09-25T18:44:53.344Z",
-    "message": "stats for container helloworld.92.232aj5zegih6wr3l6g06hbjd5 fdfcbd8c5976",
-    "severity": "info",
-    "host": "b012c0a9e548",
-    "ip": "172.17.0.71",
-    "container_id": "fdfcbd8c5976",
+    "@timestamp": "2016-09-26T16:36:47.975Z",
+    "message": "stats for container helloworld.6.4z2ibua9otvnmlig85efkz56n 27b2802d7646",
+    "severity": "stats",
+    "host": "d6b48f95ab4c",
+    "ip": "172.17.0.12",
+    "container_id": "27b2802d7646",
     "image_name": "alpine:latest",
-    "container_name": "helloworld.92.232aj5zegih6wr3l6g06hbjd5",
-    "cpu_stats_cpu_usage_cpu_percent": 0.005344840145022679,
-    "cpu_stats_throttling_data_throttled_time": 0,
-    "network_rx_packets": 0,
-    "network_rx_dropped": 0,
-    "network_tx_packets": 11,
-    "network_tx_dropped": 0,
-    "memory_stats_usage": 69632,
-    "memory_stats_failcnt": 0,
-    "memory_stats_stats_pgfault": 0,
-    "memory_stats_stats_pgpgout": 0,
-    "blkio_stats_io_service_bytes_recursive_0_value": 0,
-    "blkio_stats_io_service_time_recursive_0_value": 0,
-    "blkio_stats_io_service_bytes_recursive_1_value": 0,
-    "blkio_stats_io_service_time_recursive_1_value": 0,
-    "container_hostname": "fdfcbd8c5976",
-    "node_id": "e7herumhadti45itzlvsli6yu",
-    "service_id": "7tjqymouhqsxjto7gdw6t2usb",
-    "service_name": "helloworld",
-    "task_name": "helloworld.92",
-    "network_rx_bytes": 0,
-    "network_rx_errors": 0,
-    "network_tx_bytes": 1078,
-    "network_tx_errors": 0,
-    "memory_stats_limit": 513794048,
-    "memory_stats_stats_pgpgin": 0,
-    "blkio_stats_io_wait_time_recursive_0_value": 0,
-    "blkio_stats_io_wait_time_recursive_1_value": 0
+    "container_name": "helloworld.6.4z2ibua9otvnmlig85efkz56n",
+    "container": {
+      "cpu_stats_cpu_usage_cpu_percent": 0.01776550323841934,
+      "cpu_stats_throttling_data_throttled_time": 0,
+      "network_rx_bytes": 126,
+      "network_rx_packets": 3,
+      "network_rx_errors": 0,
+      "network_rx_dropped": 0,
+      "network_tx_bytes": 6006,
+      "network_tx_packets": 63,
+      "network_tx_errors": 0,
+      "network_tx_dropped": 0,
+      "memory_stats_usage": 57344,
+      "memory_stats_limit": 513794048,
+      "memory_stats_failcnt": 0,
+      "memory_stats_stats_pgfault": 0,
+      "memory_stats_stats_pgpgin": 0,
+      "memory_stats_stats_pgpgout": 0,
+      "blkio_stats_io_service_bytes_recursive_0_value": 0,
+      "blkio_stats_io_service_time_recursive_0_value": 0,
+      "blkio_stats_io_wait_time_recursive_0_value": 0,
+      "blkio_stats_io_service_bytes_recursive_1_value": 0,
+      "blkio_stats_io_service_time_recursive_1_value": 0,
+      "blkio_stats_io_wait_time_recursive_1_value": 0
+    },
+    "container_hostname": "27b2802d7646",
+    "swarm": {
+      "node_id": "3ud17y3bwt40lebmv3pk0cpz6",
+      "service_id": "7tjqymouhqsxjto7gdw6t2usb",
+      "service_name": "helloworld",
+      "task_name": "helloworld.6"
+    }
   }
  ```
 
@@ -109,44 +107,88 @@ sematext/sematext-agent-docker:swarm3k
   }
  ```
  
-## 3. Docker Node Info (_type: docker_node_info)
+## 3. Docker Node Info (_type: dockerNodeInfo)
  
 ```
 {
-  "_index": "80e5977e-c7d2-4570-8f66-xxxxxxxxx_2016-09-24_1",
-  "_type": "docker_node_info",
-  "_id": "AVdiZ6HwAHryUog82hLp",
-  "_score": null,
-  "_source": {
-    "@timestamp": "2016-09-25T17:31:59.908Z",
-    "message": "docker info: 20 containers running on node docker-512mb-fra1-01",
+    "@timestamp": "2016-09-26T16:08:59.982Z",
+    "message": "docker info: 3 containers running on node docker-512mb-fra1-01",
     "severity": "info",
-    "host": "e9ce7415ce1e",
-    "ip": "172.17.0.3",
+    "host": "8e0c38dfa146",
+    "ip": "172.17.0.2",
+    "CPUs": 1,
     "docker_daemon_id": "QO7I:6CR7:TFJC:T6SX:WKZC:CMOI:2QB4:PLHZ:QVEK:MLNE:HY2P:EO6G",
-    "containers": 339,
-    "containers_running": 20,
+    "containers": 167,
+    "containers_running": 3,
     "containers_paused": 0,
     "node_mem_total": 489.9921875,
-    "images": 13,
+    "images": 11,
     "node_name": "docker-512mb-fra1-01",
     "swarm_node_id": "3ud17y3bwt40lebmv3pk0cpz6",
     "swarm_nodes": 4,
-    "swarm_managers": 1
+    "swarm_managers": 1,
+    "swarm_is_master": "true"
+  }
+  
+  ```
+## System Metrics (_type: os)
+
+Exaples CPU/Memory (there are more like network, disk io, ...)
+```
+{
+    "@timestamp": "2016-09-26T16:31:55.725Z",
+    "message": "os stats for docker-512mb-nyc3-02",
+    "severity": "info",
+    "host": "d145039f49cf",
+    "ip": "172.17.0.2",
+    "oscpu": {
+      "user": 8.301190675834311,
+      "nice": 0,
+      "system": 7.512996813684388,
+      "idle": 84.13550226396109,
+      "iowait": 0,
+      "irq": 0,
+      "softirq": 0.05031024652020795,
+      "steal": 0,
+      "total": 15.864497736038906
+    },
+    "hostname": "docker-512mb-nyc3-02",
+    "node_id": "e7herumhadti45itzlvsli6yu"
   }
   ```
   
-## 4. Container Logs
+  ```
+  {
+  "_index": "003af089-8ad6-4abf-95e8-26f01890b460_2016-09-26_1",
+  "_type": "os",
+  "_id": "AVdnV-vH417-Q-IWgKDO",
+  "_score": null,
+  "_source": {
+    "@timestamp": "2016-09-26T16:32:57.571Z",
+    "message": "os stats for docker-512mb-nyc3-01",
+    "severity": "info",
+    "host": "e210f0b47a25",
+    "ip": "172.17.0.2",
+    "osmem": {
+      "used": 374808576,
+      "free": 55402496,
+      "cache": 66183168,
+      "buffer": 17399808,
+      "swapd": 0,
+      "si": 0,
+      "so": 0
+    },
+    "hostname": "docker-512mb-nyc3-01",
+    "node_id": "7n8dxv3u9dnnokjcv8hltm5dx"
+  },
+  ```
+
+## 5. Container Logs
  
 **From a Docker Compose Project**
  
  ```
  {
-  "_index": "80e5977e-c7d2-4570-8f66-xxxxxxxxx_2016-09-24_1",
-  "_type": "wordpress_latest",
-  "_id": "AVdiZ7BUAHryUog82ieI",
-  "_score": null,
-  "_source": {
     "@timestamp": "2016-09-25T17:32:22.421Z",
     "message": "Warning: mysqli::mysqli(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in - on line 19",
     "severity": "info",
@@ -167,35 +209,31 @@ sematext/sematext-agent-docker:swarm3k
  
  ```
   {
-  "_index": "80e5977e-c7d2-4570-8f66-xxxxxxxxx_2016-09-24_1",
-  "_type": "access_log_combined",
-  "_id": "AVdi_FvkAHryUog8oyEn",
-  "_score": null,
-  "_source": {
-    "@timestamp": "2016-09-25T20:14:30.000Z",
+    "@timestamp": "2016-09-26T16:39:39.000Z",
     "message": "GET / HTTP/1.1",
     "severity": "info",
     "host": "docker-512mb-fra1-01",
     "ip": "172.17.0.2",
-    "logSource": "nginx:latest_nginx.3.7yggv9wpg3yvfgujqe07hoo2x_159b591f960d",
+    "logSource": "nginx:latest_nginx.3.erhzo45t40nb6vix4si7q75gl_f1829995501a",
     "client_ip": "10.255.0.3",
     "remote_id": "-",
     "user": "-",
-    "ts": "25/Sep/2016:20:14:30 +0000",
+    "ts": "26/Sep/2016:16:39:39 +0000",
     "method": "GET",
     "path": "/ HTTP/1.1",
     "status_code": 200,
     "size": 612,
     "referer": "-",
     "user_agent": "curl/7.35.0",
-    "container_id": "159b591f960d",
+    "container_id": "f1829995501a",
     "image_name": "nginx:latest",
-    "container_name": "nginx.3.7yggv9wpg3yvfgujqe07hoo2x",
-    "container_hostname": "159b591f960d",
-    "node_id": "3ud17y3bwt40lebmv3pk0cpz6",
-    "service_id": "7onbow9pk4e5xsgsfkjrz7t3r",
-    "service_name": "nginx",
-    "task_name": "nginx.3"
-  }
+    "container_name": "nginx.3.erhzo45t40nb6vix4si7q75gl",
+    "container_hostname": "f1829995501a",
+    "swarm": {
+      "node_id": "3ud17y3bwt40lebmv3pk0cpz6",
+      "service_id": "7onbow9pk4e5xsgsfkjrz7t3r",
+      "service_name": "nginx",
+      "task_name": "nginx.3"
+    }
   ```
  
