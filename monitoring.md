@@ -23,10 +23,10 @@ docker service create --mode global --name sematext-agent-docker \
 sematext/sematext-agent-docker:swarm3k
    ```
 
-To store container Logs in Logsene create a second Logsene App and add -e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS
+To store container Logs in Logsene create a second Logsene App and add ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
 
-    You’ll see your Docker metrics in Logsene after about a minute. 
-    Create a Kibana dashboard for your metrics, events and logs. 
+**You’ll see your Docker metrics in Logsene after about a minute. 
+Then create a Kibana dashboard in Logsene. **
 
 # Example Data:
 
