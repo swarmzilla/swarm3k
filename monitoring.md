@@ -27,7 +27,7 @@ sematext/sematext-agent-docker:swarm3k
 To store container Logs in Logsene create a second Logsene App and add ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
 
 You’ll see your Docker metrics in Logsene after about a minute. Then open "Kibana / Dashboards" in Logsene.
-![](https://raw.githubusercontent.com/megastef/swarm3k/master/dashboard.png)
+![](https://raw.githubusercontent.com/megastef/swarm3k/master/dashboard2.png)
 
 # Example Data:
 
