@@ -3,8 +3,8 @@
 We use a special image of the Sematext Docker Agent for swarm3k: **sematext/sematext-agent-docker:swarm3k**
 
 Differences to the regular Sematext Docker Agent Setup:
-- Metrics, Logs and Events are stored only in Logsene. 
-  This means the SPM backend will not be involved inthe Swarm3k project. 
+- Metrics, Logs and Events are stored only in [Logsene](http://sematext.com/logsene/). 
+  This means the [SPM](https://sematext.com/spm/) backend will not be involved in the Swarm3k project. 
 - Kibana (integrated in Logsene) should be used for metrics visulisation.  
 - The metrics collection interval is set to a resolution of 1 minute. We expect 150k containers an like to reduce the amount of data to speed up Kibana queries.
 - Metrics and Logs are tagged with swarm specific tags from "docker info", like NodeID, ServiceID, Swarm labels, ...
