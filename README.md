@@ -21,6 +21,7 @@ SwarmZilla 3000 Collaborative Project
 | Name          | Company       | Number of Nodes<br>Expected to Contribute |
 | ------------- |:-------------:|:-----------------------------------------:|
 | [@chanwit](https://twitter.com/chanwit) | Suranaree University | 100 |
+| [@everett_toews](https://twitter.com/everett_toews) | Rackspace | 100 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
@@ -37,6 +38,6 @@ SwarmZilla 3000 will be targeting 3,000 nodes. This test will be done on the sta
   * For the routing mesh tests, the workload will be Wordpress applications. We're designing this.
 
 ## Public results
-All experimental results will be provided publicly for all of you to analyze, write blogs, 
+All experimental results will be provided publicly for all of you to analyze, write blogs,
 or even used as information for further development of your own commercial projects. Please feel free to use it.
 If you'd like to refer to the set of published data, just link back to this project page.
