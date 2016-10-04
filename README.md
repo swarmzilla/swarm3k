@@ -1,6 +1,10 @@
 # swarm3k
 SwarmZilla 3000 Collaborative Project
 
+## Special Thanks
+  * DigitalOcean gave use $250 node credits for this project.
+  * Sematext joins us as our official monitoring and logging system.
+
 ## Goals
 This is the 2nd collaborative project to distributedly form a huge Docker cluster.
 SwarmZilla 3000 will be targeting 3,000 nodes. This test will be done on the stable 1.12.2 version of Docker to make it more stable of course.
@@ -10,7 +14,6 @@ SwarmZilla 3000 will be targeting 3,000 nodes. This test will be done on the sta
   * Routing Mesh; We will be testing the Routing Mesh feature on Docker 1.12.2.
   * For the routing mesh tests, the workload will be Wordpress applications.
   
-
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
 The provision steps for number of nodes more than 50 will make things complex.
