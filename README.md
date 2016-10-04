@@ -2,8 +2,14 @@
 SwarmZilla 3000 Collaborative Project
 
 ## Special Thanks
-  * DigitalOcean gave use $250 node credits for this project.
-  * Sematext joins us as our official monitoring and logging system.
+
+![DigitalOcean](https://www.digitalocean.com/assets/media/logos-badges/DO_Logo_horizontal_blue-1fdb454a.png)
+
+[DigitalOcean](http://digitalocean.com) gave us $250 credits to provision node for this project.
+
+![Sematext](https://sematext.com/wp-content/uploads/2016/02/sematext-logo-250-45.png)
+
+[Sematext](https://sematext.com) joins us as our official monitoring and logging system.
 
 ## Goals
 This is the 2nd collaborative project to distributedly form a huge Docker cluster.
