@@ -13,8 +13,8 @@ Differences to the regular Sematext Docker Agent Setup:
 # Installation 
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. We will [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Thats why it makes sense to create a second Logsene App for Logs.   
-3. For the deployment Sematext Docker Agent to all cluster nodes, we will share the required tokens via e-mail or gitter channel.  
+2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore it makes sense to create a second Logsene App for Logs.   
+3. The deployment of Sematext Docker Agent to all swarm3k nodes, requires the App tokens, shared via e-mail or gitter channel. One command will activate the agent on all current and future swarm3k nodes. 
 
  ```
 docker service create --mode global --name sematext-agent-docker \
@@ -24,13 +24,19 @@ docker service create --mode global --name sematext-agent-docker \
 sematext/sematext-agent-docker:swarm3k
 ```
 
-To store container Logs in Logsene create a second Logsene App and add ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
+Container Logs are stored in a second Logsene App ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
 
-You’ll see your Docker metrics in Logsene after about a minute. Then open "Kibana / Dashboards" in Logsene.
+You’ll see your Docker Swarm metrics in [Logsene](https://apps.sematext.com/logsene-reports/) after about a minute. 
+Then open "Kibana / Dashboards" in Logsene.
+
 ![](https://raw.githubusercontent.com/megastef/swarm3k/master/dashboard2.png)
 
 ![](https://raw.githubusercontent.com/megastef/swarm3k/master/events.png)
 
+## Public Dashboard
+
+A public Grafana dashboard is available [here](https://sematext.com/swarm3k/).
+If you need admin access to Grafana Dashboards, [sign up](https://swarm3k.sematext.com/login) and ask @sematext for admin permission. 
 
 # Example Data:
 
