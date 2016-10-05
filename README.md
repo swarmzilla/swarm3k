@@ -22,6 +22,7 @@ SwarmZilla 3000 Collaborative Project
 | ------------- |:-------------:|:-----------------------------------------:|
 | [@chanwit](https://twitter.com/chanwit) | Suranaree University | 100 |
 | [@FlorianHeigl](https://twitter.com/FlorianHeigl1) | my own boss | 10 | 
+| [@jmaitrehenry](https://twitter.com/jmaitrehenry) | PetalMD | 50 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
