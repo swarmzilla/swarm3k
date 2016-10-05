@@ -16,13 +16,13 @@ Differences to the regular Sematext Docker Agent Setup:
 2. We will [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Thats why it makes sense to create a second Logsene App for Logs.   
 3. For the deployment Sematext Docker Agent to all cluster nodes, we will share the required tokens via e-mail or gitter channel.  
 
-   ```
+ ```
 docker service create --mode global --name sematext-agent-docker \
 --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \ 
 -e LOGSENE_STATS_TOKEN=YOUR_LOGSENE_TOKEN_FOR_METRICS \
 -e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS \ # optional: if not set no logs are collected
 sematext/sematext-agent-docker:swarm3k
-   ```
+```
 
 To store container Logs in Logsene create a second Logsene App and add ```-e LOGSENE_TOKEN=YOUR_LOGSENE_TOKEN_FOR_LOGS```
 
@@ -156,7 +156,31 @@ You’ll see your Docker metrics in Logsene after about a minute. Then open "Kib
     "task_rejected": 3
   }
   ```
-## 5. System Metrics (_type: os)
+## 5. Swarm Task Errors
+```
+{
+    "@timestamp": "2016-10-05T07:03:56.833Z",
+    "message": "Error in swarm task: started / task: non-zero exit (137)",
+    "severity": "error",
+    "host": "docker-512mb-fra1-01",
+    "ip": "172.17.0.2",
+    "createAt": "2016-10-05T07:03:02.455Z",
+    "updatedAt": "2016-10-05T07:03:57.958Z",
+    "taskId": "9zkxhstf9dgzcdlzggu19lefp",
+    "nodeId": "7n8dxv3u9dnnokjcv8hltm5dx",
+    "serviceId": "6hm63ht29ix6xsw4o10gp1ia0",
+    "slot": -1,
+    "desiredState": "shutdown",
+    "status": {
+      "state": "failed",
+      "message": "started",
+      "error": "task: non-zero exit (137)"
+    },
+    "isInDesiredState": 0
+  }
+```
+
+## 6. System Metrics (_type: os)
 
 Exaples CPU/Memory (there are more like network, disk io, ...)
 ```
