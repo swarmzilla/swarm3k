@@ -1,5 +1,6 @@
-# swarm3k
+# Swarm3k
 SwarmZilla 3000 Collaborative Project
+We now have **260 nodes** and counting !!
 
 ## Special Thanks
 
