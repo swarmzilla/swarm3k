@@ -1,12 +1,13 @@
 # Swarm3k
 SwarmZilla 3000 Collaborative Project
-We now have **760 nodes** and counting !!
+
+## We now have **760 nodes** and counting !!
 
 ## Special Thanks
 
 ![DigitalOcean](https://www.digitalocean.com/assets/media/logos-badges/DO_Logo_horizontal_blue-1fdb454a.png)
 
-[DigitalOcean](http://digitalocean.com) gave us $250 credits to provision node for this project.
+[DigitalOcean](http://digitalocean.com) gave us $250 credits to provision nodes for this project.
 
 ![Sematext](https://sematext.com/wp-content/uploads/2016/02/sematext-logo-250-45.png)
 
