@@ -232,7 +232,7 @@ Exaples CPU/Memory (there are more like network, disk io, ...)
   },
   ```
 
-## 6. Container Logs
+## 7. Container Logs
  
 **From a Docker Compose Project**
  
