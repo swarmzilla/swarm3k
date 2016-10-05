@@ -13,7 +13,8 @@ Differences to the regular Sematext Docker Agent Setup:
 # Installation 
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore it makes sense to create a second Logsene App for Logs.   
+2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore it makes sense to create a second Logsene App for Logs.
+__If you need access to the swarm3k Logsene App, ask for an [invitation](mailto:docker@sematext.com )__
 3. The deployment of Sematext Docker Agent to all swarm3k nodes, requires the App tokens, shared via e-mail or gitter channel. One command will activate the agent on all current and future swarm3k nodes. 
 
  ```
@@ -35,8 +36,8 @@ Then open "Kibana / Dashboards" in Logsene.
 
 ## Public Dashboard
 
-A public Grafana dashboard is available [here](https://sematext.com/swarm3k/).
-If you need admin access to Grafana Dashboards, [sign up](https://swarm3k.sematext.com/login) and ask @sematext for admin permission. 
+Public Grafana dashboards are available [here](https://sematext.com/swarm3k/).
+If you need admin access to Grafana Dashboards, [sign up](https://swarm3k.sematext.com/login) and [ask](mailto:docker@sematext.com) for access permissons. 
 
 # Example Data:
 
