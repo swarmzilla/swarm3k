@@ -27,6 +27,7 @@ SwarmZilla 3000 Collaborative Project
 | [@jmaitrehenry](https://twitter.com/jmaitrehenry) | PetalMD | 50 |
 | [@everett_toews](https://twitter.com/everett_toews) | Rackspace | 100 |
 | [@InetCloudArch](https://twitter.com/InetCloudArch) | Internet Thailand | 500 |
+| [@squeaky_pl](https://twitter.com/squeaky_pl) | n/a | 10 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
