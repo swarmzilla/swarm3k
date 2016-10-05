@@ -37,7 +37,7 @@ Then open "Kibana / Dashboards" in Logsene.
 ## Public Dashboard
 
 Public Grafana dashboards are available [here](https://sematext.com/swarm3k/).
-If you need admin access to Grafana Dashboards, [sign up](https://swarm3k.sematext.com/login) and [ask](mailto:docker@sematext.com) for access permissons. 
+If you need admin access to Grafana Dashboards, [sign up](https://swarm3k.sematext.com/login) and [ask](mailto:docker@sematext.com) for the access permissons. 
 
 # Example Data:
 
