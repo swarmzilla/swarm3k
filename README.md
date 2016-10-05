@@ -25,6 +25,7 @@ We now have **260 nodes** and counting !!
 | [@FlorianHeigl](https://twitter.com/FlorianHeigl1) | my own boss | 10 | 
 | [@jmaitrehenry](https://twitter.com/jmaitrehenry) | PetalMD | 50 |
 | [@everett_toews](https://twitter.com/everett_toews) | Rackspace | 100 |
+| [@InetCloudArch](https://twitter.com/InetCloudArch) | Internet Thailand | 500 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
