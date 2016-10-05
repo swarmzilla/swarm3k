@@ -137,7 +137,7 @@ You’ll see your Docker metrics in Logsene after about a minute. Then open "Kib
   
   ```
 
-## 4. Swarm Task Stats
+## 4. Swarm Task Stats (_type:swarmTaskStats)
 
 ```
 {
