@@ -136,7 +136,27 @@ You’ll see your Docker metrics in Logsene after about a minute. Then open "Kib
   }
   
   ```
-## System Metrics (_type: os)
+
+## 4. Swarm Task Stats
+
+```
+{
+    "@timestamp": "2016-10-05T08:50:14.034Z",
+    "message": "swarm task metrics",
+    "severity": "info",
+    "host": "docker-2gb-nyc3-01",
+    "ip": "172.17.0.2",
+    "task_in_desired_state": 6,
+    "task_not_in_desired_state": 0,
+    "task_running": 62,
+    "task_shutdown": 197,
+    "task_starting": 43,
+    "task_complete": 5,
+    "task_failed": 6,
+    "task_rejected": 3
+  }
+  ```
+## 5. System Metrics (_type: os)
 
 Exaples CPU/Memory (there are more like network, disk io, ...)
 ```
@@ -188,7 +208,7 @@ Exaples CPU/Memory (there are more like network, disk io, ...)
   },
   ```
 
-## 5. Container Logs
+## 6. Container Logs
  
 **From a Docker Compose Project**
  
