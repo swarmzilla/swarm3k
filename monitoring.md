@@ -13,9 +13,9 @@ Differences to the regular Sematext Docker Agent Setup:
 # Installation 
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system metrics, container metrics and docker events. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore it makes sense to create a second Logsene App for Logs.
-__If you need access to the swarm3k Logsene App, ask for an [invitation](mailto:docker@sematext.com )__
-3. The deployment of Sematext Docker Agent to all swarm3k nodes, requires the App tokens. The following tokens are write only tokens. One command will activate the agent on all current and future swarm3k nodes, when executed on one of the Swarm master nodes:
+2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system and container metrics. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore logs are stored in a second Logsene App.  We use write-only tokens for the deployment. This means the published tokens can't be used to query data.  
+__If you need access to the swarm3k Logsene Apps, ask for an [invitation](mailto:docker@sematext.com )__
+3. The deployment of Sematext Docker Agent to all swarm3k nodes, requires only one command on a Swarm master node:
 
 ```
 docker service create --mode global \
