@@ -13,6 +13,10 @@ SwarmZilla 3000 Collaborative Project
 
 [Sematext](https://sematext.com) joins us as our official monitoring and logging system.
 
+![Demonware](http://www.mapmodnews.com/images/library/image/demonware.jpg)
+
+[Demonware](https://www.demonware.net) joins us with their 1,000 nodes.
+
 ## Contribution Proposal
   0. Please create a pull request, saying you'd like to contribute nodes.
   Please also include your full name, Twitter's handle *and* your company name.
