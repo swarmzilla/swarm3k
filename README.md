@@ -34,7 +34,8 @@ SwarmZilla 3000 Collaborative Project
 | [@squeaky_pl](https://twitter.com/squeaky_pl) | n/a | 10 |
 | [@neverlock](https://twitter.com/neverlock) | Neverlock | 10 |
 | [@demonware](https://twitter.com/demonware) | Demonware | 1000 |
-| [@sujaypillai](https://twitter.com/sujaypillai) | Jabil | 50 |
+| [@sujaypillai](https://twitter.com/sujaypillai) | Jabil | 50 
+| [@pilgrimstack](https://twitter.com/pilgrimstack) | OVH | 500 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
