@@ -1,7 +1,7 @@
 # Swarm3k
 SwarmZilla 3000 Collaborative Project
 
-## We now have **1780 nodes** and counting !!
+## We now have **1830 nodes** and counting !!
 
 ## Special Thanks
 
@@ -34,6 +34,7 @@ SwarmZilla 3000 Collaborative Project
 | [@squeaky_pl](https://twitter.com/squeaky_pl) | n/a | 10 |
 | [@neverlock](https://twitter.com/neverlock) | Neverlock | 10 |
 | [@demonware](https://twitter.com/demonware) | Demonware | 1000 |
+| [@sujaypillai](https://twitter.com/sujaypillai) | Jabil | 50 |
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
