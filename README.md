@@ -1,7 +1,7 @@
 # Swarm3k
 SwarmZilla 3000 Collaborative Project
 
-## We now have **3,040 nodes** and counting !!
+## We now have **3,060 nodes** and counting !!
 
 ## Special Thanks
 
@@ -52,6 +52,7 @@ SwarmZilla 3000 Collaborative Project
 | [@GroupSprint3r](https://twitter.com/GroupSprint3r) | SPRINT3r | 630
 | [@toughIQ](https://twitter.com/toughiq) | Personal | 30
 | [@mrnonaki](https://twitter.com/mrnonaki) | N/A | 10
+| [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 20
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
