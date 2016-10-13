@@ -6,14 +6,14 @@ Differences to the regular Sematext Docker Agent Setup:
 - Metrics, Logs and Events are stored only in [Logsene](http://sematext.com/logsene/). 
   This means the [SPM](https://sematext.com/spm/) backend will not be involved in the Swarm3k project. 
 - Kibana (integrated in Logsene) should be used for metrics visulisation.  
-- The metrics collection interval is set to a resolution of 1 minute. We expect 150k containers an like to reduce the amount of data to speed up Kibana queries.
-- Metrics and Logs are tagged with swarm specific tags from "docker info", like NodeID, ServiceID, Swarm labels, ...
-- Collection of "docker info" 
+- The metrics collection interval is set to a resolution of 1 minute. We expect 150k containers an like to reduce the amount of data to speed up Kibana queries. 
+- Metrics and Logs are tagged with swarm specific tags like NodeID, ServiceID and Swarm labels
+- Collection of task status and task errors
 
-# Installation 
+# Installation
 
 1. Get a free account at [sematext.com](https://apps.sematext.com/users-web/register.do)  
-2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store at least system and container metrics. Logs might generate additional fields in the schema, depending from the application type. Having fewer fields in one App will make the creation of Dashboards simpler. Therefore logs are stored in a second Logsene App.  We use write-only tokens for the deployment. This means the published tokens can't be used to query data.  
+2. We [create a Logsene App](https://apps.sematext.com/logsene-reports/registerApplication.do) to obtain an App Token for [Logsene](http://www.sematext.com/logsene/). This token is used to store system and container metrics, docker events and task errors. We use a write-only token for the deployment. This means the published token can't be used to query data.  
 __If you need access to the swarm3k Logsene Apps, ask for an [invitation](mailto:docker@sematext.com )__
 3. The deployment of Sematext Docker Agent to all swarm3k nodes, requires only one command on a Swarm master node:
 
@@ -23,14 +23,10 @@ docker service create --mode global \
 --name sematext-agent-docker \
 --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
 -e LOGSENE_STATS_TOKEN=b32b07c8-398e-4959-af9b-b713a1948585 \
--e LOGSENE_TOKEN=4d245693-7e7d-475f-bdbf-3542602539bb \
 sematext/sematext-agent-docker:swarm3k
 ```
 
-- Metrics are stored in the app with LOGSENE_STATS_TOKEN
-- Events and Logs are stored in a second Logsene App with the LOGSENE_TOKEN
-
-You’ll see your Docker Swarm metrics in [Logsene](https://apps.sematext.com/logsene-reports/) swarm3k App after about a minute. Then open "Kibana / Dashboards" in Logsene.
+You’ll see your Docker Swarm metrics in [Logsene](https://apps.sematext.com/logsene-reports/) swarm3k App after about a minute. Then open "Kibana / Dashboards" in Logsene. Or visit the [public swarm3k monitoring dashboard](https://sematext.com/swarm3k).
 
 ![](https://raw.githubusercontent.com/megastef/swarm3k/master/dashboard2.png)
 
@@ -241,7 +237,7 @@ Exaples CPU/Memory (there are more like network, disk io, ...)
   },
   ```
 
-## 7. Container Logs
+## 7. Container Logs (disabled during swarm3k test)
  
 **From a Docker Compose Project**
  
