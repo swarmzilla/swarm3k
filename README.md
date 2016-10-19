@@ -53,6 +53,7 @@ SwarmZilla 3000 Collaborative Project
 | [@toughIQ](https://twitter.com/toughiq) | Personal | 30
 | [@mrnonaki](https://twitter.com/mrnonaki) | N/A | 10
 | [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 20
+| [@first087](https://twitter.com/first087) | N/A | 25
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
