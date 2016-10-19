@@ -20,16 +20,17 @@ SwarmZilla 3000 Collaborative Project
 ## Contribution Proposal
   0. Please create a pull request, saying you'd like to contribute nodes.
   Please also include your full name, Twitter's handle *and* your company name.
-  0. Date for the experiments will be announced after we get more than 3,000 nodes.
+  0. ~~Date for the experiments will be announced after we get more than 3,000 nodes.~~
   0. Please note that the node's specification for this run is **1GB of RAM with 1 vCore**.
   We're sorry that 512MB will be not enough for our testing this time.
   
 ## What's mininum requirements of a node?
+  0. Minimum hardware spec es **1GB of RAM and 1 vCore**
   0. For the security reason, we do not provision or operate your nodes directly. *A cool engineer* on your side will be responsible for provision and join the cluster using the provided token
   0. Token will be provided in this room: gitter.im/swarmzilla/swarm3k during the run.
   0. Last time, we ran the Swarm2K cluster around 8 hours. Basically, you can expect this run of Swarm3K will be around 8 hours too.
   0. Each node must have a public IPv4 on its network interface. Floating IPs cannot be used to join this public cluster.
-  0. Docker 1.12.2 (will be released very soon)
+  0. Docker 1.12.2 ~~(will be released very soon)~~
   0. TCP port 2377 for cluster management
   0. TCP and UDP port 7946 for communication among nodes
   0. TCP and UDP port 4789 for overlay network
