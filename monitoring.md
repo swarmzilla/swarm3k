@@ -19,6 +19,7 @@ __If you need access to the swarm3k Logsene Apps, ask for an [invitation](mailto
 
 ```
 docker service create --mode global \
+--reserve-memory 128mb \
 --restart-condition any \
 --name sematext-agent-docker \
 --mount type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
