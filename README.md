@@ -1,7 +1,7 @@
 # Swarm3k - Friday, 28th October 2016 3.00PM UTC
 SwarmZilla 3000 Collaborative Project
 
-## We now have **3,085 nodes** and counting !!
+## We now have **3,185 nodes** and counting !!
 
 ## Special Thanks
 
