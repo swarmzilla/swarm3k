@@ -25,7 +25,7 @@ SwarmZilla 3000 Collaborative Project
   We're sorry that 512MB will be not enough for our testing this time.
   
 ## What's mininum requirements of a node?
-  0. Minimum hardware spec es **1GB of RAM and 1 vCore**
+  0. Minimum hardware spec is **1GB of RAM and 1 vCore**
   0. For the security reason, we do not provision or operate your nodes directly. *A cool engineer* on your side will be responsible for provision and join the cluster using the provided token
   0. Token will be provided in this room: gitter.im/swarmzilla/swarm3k during the run.
   0. Last time, we ran the Swarm2K cluster around 8 hours. Basically, you can expect this run of Swarm3K will be around 8 hours too.
