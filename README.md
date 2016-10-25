@@ -56,6 +56,7 @@ SwarmZilla 3000 Collaborative Project
 | [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 20
 | [@\_EthanHunt\_](https://twitter.com/_EthanHunt_) | N/A | 25
 | [@packethost](https://twitter.com/packethost) | Packet | 100
+| [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
