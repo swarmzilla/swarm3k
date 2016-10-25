@@ -14,5 +14,5 @@ net.ipv4.neigh.default.gc_thresh3 = 32768
 
 # Workloads
 
-  0 The first workload will be a Wordpress cluster ~ 2,900 nodes connecting to Percona Galera XtraDB.
-  0 The second wordload will be `alpine top` to stress the Docker swarm managers by maximizing task numbers. We are expecting to reach 150,000 tasks for this run.
+  0. The first workload will be a Wordpress cluster ~ 2,900 nodes connecting to Percona Galera XtraDB.
+  0. The second wordload will be `alpine top` to stress the Docker swarm managers by maximizing task numbers. We are expecting to reach 150,000 tasks for this run.
