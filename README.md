@@ -58,6 +58,7 @@ SwarmZilla 3000 Collaborative Project
 | [@packethost](https://twitter.com/packethost) | Packet | 100
 | [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
 | [@_pascalandy](https://twitter.com/_pascalandy) | FirePress | 10
+| [@lucjuggery](https://twitter.com/lucjuggery) | TRAXxs | 10
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
