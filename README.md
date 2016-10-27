@@ -60,6 +60,7 @@ SwarmZilla 3000 Collaborative Project
 | [@_pascalandy](https://twitter.com/_pascalandy) | FirePress | 10
 | [@lucjuggery](https://twitter.com/lucjuggery) | TRAXxs | 10
 | [@svega](https://twitter.com/svega) | Huli | 10
+| [@BretFisher](https://twitter.com/BretFisher) | Myself :) | 20
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
