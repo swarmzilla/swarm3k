@@ -1,7 +1,7 @@
 # Swarm3k - Friday, 28th October 2016 3.00PM UTC
 SwarmZilla 3000 Collaborative Project
 
-## We now have **3,185 nodes** and counting !!
+## We now have **3,195 nodes** and counting !!
 
 ## Special Thanks
 
@@ -59,6 +59,7 @@ SwarmZilla 3000 Collaborative Project
 | [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
 | [@_pascalandy](https://twitter.com/_pascalandy) | FirePress | 10
 | [@lucjuggery](https://twitter.com/lucjuggery) | TRAXxs | 10
+| [@svega](https://twitter.com/svega) | Huli | 10
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
