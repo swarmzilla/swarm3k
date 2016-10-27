@@ -9,12 +9,13 @@
   0. TCP port 2377 for cluster management
   0. TCP and UDP port 7946 for communication among nodes
   0. TCP and UDP port 4789 for overlay network
-  0. Setting in `/etc/sysctl.conf`
+  0. Append following settings in `/etc/sysctl.conf` and issue command `sysctl -p` afterwards.
 ```
 net.ipv4.neigh.default.gc_thresh1 = 30000
 net.ipv4.neigh.default.gc_thresh2 = 32000
 net.ipv4.neigh.default.gc_thresh3 = 32768
 ```
+  
 # Workloads
 
   0. The first workload will be a Wordpress cluster ~ 2,900 nodes connecting to Percona Galera XtraDB.
