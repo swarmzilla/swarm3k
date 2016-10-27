@@ -15,6 +15,9 @@ net.ipv4.neigh.default.gc_thresh1 = 30000
 net.ipv4.neigh.default.gc_thresh2 = 32000
 net.ipv4.neigh.default.gc_thresh3 = 32768
 ```
+  0. Execute `sysctl -p` to enable the new 3 settings.
+     To check if changes got applied use `sysctl -a|grep net.ipv4.neigh.default.gc_thresh`
+  
 # Workloads
 
   0. The first workload will be a Wordpress cluster ~ 2,900 nodes connecting to Percona Galera XtraDB.
