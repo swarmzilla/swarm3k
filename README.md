@@ -23,7 +23,7 @@ SwarmZilla 3000 Collaborative Project
   0. ~~Date for the experiments will be announced after we get more than 3,000 nodes.~~
   0. Please note that the node's specification for this run is **1GB of RAM with 1 vCore**.
   We're sorry that 512MB will be not enough for our testing this time.
-  
+
 ## What's mininum requirements of a node?
   0. Minimum hardware spec is **1GB of RAM and 1 vCore**
   0. For the security reason, we do not provision or operate your nodes directly. *A cool engineer* on your side will be responsible for provision and join the cluster using the provided token
@@ -38,7 +38,7 @@ SwarmZilla 3000 Collaborative Project
 | Name          | Company       | Number of Nodes<br>Expected to Contribute |
 | ------------- |:-------------:|:-----------------------------------------:|
 | [@chanwit](https://twitter.com/chanwit) | Suranaree University | 100 |
-| [@FlorianHeigl](https://twitter.com/FlorianHeigl1) | my own boss | 10 | 
+| [@FlorianHeigl](https://twitter.com/FlorianHeigl1) | my own boss | 10 |
 | [@jmaitrehenry](https://twitter.com/jmaitrehenry) | PetalMD | 50 |
 | [@everett_toews](https://twitter.com/everett_toews) | Rackspace | 100 |
 | [@InetCloudArch](https://twitter.com/InetCloudArch) | Internet Thailand | 500 |
@@ -61,6 +61,7 @@ SwarmZilla 3000 Collaborative Project
 | [@lucjuggery](https://twitter.com/lucjuggery) | TRAXxs | 10
 | [@svega](https://twitter.com/svega) | Huli | 10
 | [@BretFisher](https://twitter.com/BretFisher) | Myself :) | 20
+| [@voodootikigod](https://twitter.com/voodootikigod) | Emerging Technology Advisors | 100
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
