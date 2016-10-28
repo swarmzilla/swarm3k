@@ -66,7 +66,6 @@ SwarmZilla 3000 Collaborative Project
 | [@AlexPostID](https://twitter.com/AlexPostID) | Personal | 20
 | [@Rucknar](https://twitter.com/Rucknar) | Personal | 10
 
-
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
 The provision steps for number of nodes more than 50 will make things complex.
