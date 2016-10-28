@@ -3,7 +3,7 @@
   0. The join command *must* be `docker swarm join --advertise-addr=<dedicated-public-ip> <manager-ip>`, where `manager-ip` will be provided.
   0. Note that you *need* to specify a *Dedicated Public IPv4 Address* for the node to join. Otherwise, the Routing Mesh feature will not be working on your node.
   0. Please read No. 2 again ;-)
-  0. Docker version: 1.12.2
+  0. Docker version: 1.12.3
   0. Ubuntu version: 16.04
   0. Public IPv4 for *each node*
   0. TCP port 2377 for cluster management
