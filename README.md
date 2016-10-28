@@ -64,7 +64,7 @@ SwarmZilla 3000 Collaborative Project
 | [@BretFisher](https://twitter.com/BretFisher) | Myself :) | 20
 | [@voodootikigod](https://twitter.com/voodootikigod) | Emerging Technology Advisors | 100
 | [@AlexPostID](https://twitter.com/AlexPostID) | Personal | 20
-| [@AlexPostID](https://twitter.com/gianarb) | ThumpFlow | 20
+| [@gianarb](https://twitter.com/gianarb) | ThumpFlow | 50
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
