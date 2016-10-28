@@ -30,7 +30,7 @@ SwarmZilla 3000 Collaborative Project
   0. Token will be provided in this room: gitter.im/swarmzilla/swarm3k during the run.
   0. Last time, we ran the Swarm2K cluster around 8 hours. Basically, you can expect this run of Swarm3K will be around 8 hours too.
   0. Each node must have a public IPv4 on its network interface. Floating IPs cannot be used to join this public cluster.
-  0. Docker 1.12.2 ~~(will be released very soon)~~
+  0. Docker 1.12.3
   0. TCP port 2377 for cluster management
   0. TCP and UDP port 7946 for communication among nodes
   0. TCP and UDP port 4789 for overlay network
@@ -72,10 +72,10 @@ If you're joining us for the second time (welcome back Heroes!!), feel free to c
 ## Goals
 This is the 2nd collaborative project to distributedly form a huge Docker cluster, targeting 3,000 nodes.
 
-We understand Docker and we also understand that the community needs long-term versions of Docker. This test will be done on the stable 1.12.2 version of Docker to get feedbacks and of course to make the next stable versions being more stable!!
+We understand Docker and we also understand that the community needs long-term versions of Docker. This test will be done on the stable 1.12.3 version of Docker to get feedbacks and of course to make the next stable versions being more stable!!
 
   * Networking; We will be creating a large subnet /20 and trying to assign, as many as possible, IP addresses to each container on each node distributedly. We expect to have around ~3,000 IP addresses assigned and the workload application should be working fine.
-  * Routing Mesh; We will be testing the Routing Mesh feature on Docker 1.12.2.
+  * Routing Mesh; We will be testing the Routing Mesh feature on Docker 1.12.3.
   * For the routing mesh tests, the workload will be Wordpress applications. We're designing this.
 
 ## Public results
