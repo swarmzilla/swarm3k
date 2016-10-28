@@ -59,6 +59,7 @@ SwarmZilla 3000 Collaborative Project
 | [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
 | [@_pascalandy](https://twitter.com/_pascalandy) | FirePress | 10
 | [@lucjuggery](https://twitter.com/lucjuggery) | TRAXxs | 10
+| [@alexellisuk](https://twitter.com/alexellisuk) | Personal | 10
 | [@svega](https://twitter.com/svega) | Huli | 10
 | [@BretFisher](https://twitter.com/BretFisher) | Myself :) | 20
 | [@voodootikigod](https://twitter.com/voodootikigod) | Emerging Technology Advisors | 100
