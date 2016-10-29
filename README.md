@@ -53,7 +53,7 @@ SwarmZilla 3000 Collaborative Project
 | [@GroupSprint3r](https://twitter.com/GroupSprint3r) | SPRINT3r | 630
 | [@toughIQ](https://twitter.com/toughiq) | Personal | 30
 | [@mrnonaki](https://twitter.com/mrnonaki) | N/A | 10
-| [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 20
+| [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 200
 | [@\_EthanHunt\_](https://twitter.com/_EthanHunt_) | N/A | 25
 | [@packethost](https://twitter.com/packethost) | Packet | 100
 | [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
