@@ -53,7 +53,7 @@ SwarmZilla 3000 Collaborative Project
 | [@GroupSprint3r](https://twitter.com/GroupSprint3r) | SPRINT3r | 630
 | [@toughIQ](https://twitter.com/toughiq) | Personal | 30
 | [@mrnonaki](https://twitter.com/mrnonaki) | N/A | 10
-| [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 20
+| [@zinuzoid](https://twitter.com/zinuzoid) | HotelQuickly | 200
 | [@\_EthanHunt\_](https://twitter.com/_EthanHunt_) | N/A | 25
 | [@packethost](https://twitter.com/packethost) | Packet | 100
 | [@ContainerizeT](https://twitter.com/ContainerizeT) | ContainerizeThis: The Conference | 10
@@ -64,6 +64,11 @@ SwarmZilla 3000 Collaborative Project
 | [@BretFisher](https://twitter.com/BretFisher) | Myself :) | 20
 | [@voodootikigod](https://twitter.com/voodootikigod) | Emerging Technology Advisors | 100
 | [@AlexPostID](https://twitter.com/AlexPostID) | Personal | 20
+| [@gianarb](https://twitter.com/gianarb) | ThumpFlow | 50
+| [@Rucknar](https://twitter.com/Rucknar) | Personal | 10
+| [@lherrerabenitez](https://twitter.com/lherrerabenitez) | Personal | 10
+| [@abhisak](https://twitter.com/abhisak) | Nipa Technology | 100
+| [@djalal](https://twitter.com/enlamp) | NexwayGroup | 30 
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
