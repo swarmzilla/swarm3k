@@ -68,6 +68,7 @@ SwarmZilla 3000 Collaborative Project
 | [@Rucknar](https://twitter.com/Rucknar) | Personal | 10
 | [@lherrerabenitez](https://twitter.com/lherrerabenitez) | Personal | 10
 | [@abhisak](https://twitter.com/abhisak) | Nipa Technology | 100
+| [@djalal](https://twitter.com/enlamp) | NexwayGroup | 30 
 
 ## Beginner's Guide
 If you're an individual and it's your first time joining SwarmZilla, we encourage you to *not* contribute more than 50 nodes.
